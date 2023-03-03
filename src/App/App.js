@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+import MainWrap from '../MainWrap/MainWrap';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      hello world
+      <MainWrap />
     </div>
   );
 }
