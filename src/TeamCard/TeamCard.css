@@ -1,0 +1,42 @@
+.TeamCard {
+    width: 200px;
+    height: 300px;
+    margin: 5px 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #f2f2f2;
+    border-radius: 20px;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+    transition: all 0.3s ease-out;
+}
+
+.TeamCard:hover {
+    transform: translateY(-10px);
+}
+
+.TeamLeader {
+    width: 70px;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    color: #1c1b1a;
+    font-size: 24px;
+
+    padding-bottom: 10px;
+    border-bottom: #25539c 3px solid;
+}
+
+.TeamMember {
+    width: 100px;
+    text-align: center;
+    color: #1c1b1a;
+    margin: 0px;
+}

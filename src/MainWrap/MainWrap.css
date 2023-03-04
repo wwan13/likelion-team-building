@@ -1,5 +1,9 @@
 .MainWrap {
-    width: 200px;
-    height: 200px;
-    background-color: aliceblue;
+    width: 1400px;
+    height: 600px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
