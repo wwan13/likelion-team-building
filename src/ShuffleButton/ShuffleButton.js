@@ -1,9 +1,9 @@
 import './ShuffleButton.css'
 
-function ShuffleButton () {
+function ShuffleButton (props) {
 
     return (
-        <button className='ShuffleButton'>
+        <button onClick={props.onClick} className='ShuffleButton'>
             shuffle
         </button>
     )

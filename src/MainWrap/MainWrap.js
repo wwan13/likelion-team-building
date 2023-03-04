@@ -1,24 +1,35 @@
 import ShuffleButton from '../ShuffleButton/ShuffleButton';
 import TeamCard from '../TeamCard/TeamCard';
 import Leaders from '../Members/Leaders';
+import Members from '../Members/Members';
+import Shuffle from '../Shuffle/Shuffle';
 import './MainWrap.css'
+import { useState } from 'react';
 
 function MainWrap () {
 
-    console.log(Leaders);
+    const [leaders, setLeaders] = useState(Leaders);
+    const [members, setMembers] = useState(Members);
+
+    const shuffle = () => {
+        console.log("click");
+        let [leadersAfter, membersAfter] = Shuffle(Leaders, Members);
+        console.log(leadersAfter);
+        setLeaders(prevList => leadersAfter);
+        setMembers(membersAfter);
+    }
 
     return(
         <div className='MainWrap'>
             <div className="CardWrap">
-                <TeamCard teamNum="1" teamLeader={Leaders[0]}/>
-                <TeamCard teamNum="2" teamLeader={Leaders[1]}/>
-                <TeamCard teamNum="3" teamLeader={Leaders[2]}/>
-                <TeamCard teamNum="4" teamLeader={Leaders[3]}/>
-                <TeamCard teamNum="5" teamLeader={Leaders[4]}/>
-                <TeamCard teamNum="6" teamLeader={Leaders[5]}/>
+                {
+                    leaders.map((leader, i) => {
+                        return <TeamCard teamNum={i+1} teamLeader={leader}/>
+                    })
+                }
             </div>
             <div className='ButtonWrap'>
-                <ShuffleButton />
+                <ShuffleButton onClick ={shuffle}/>
             </div>
         </div>
     )
