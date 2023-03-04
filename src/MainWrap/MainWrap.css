@@ -1,7 +1,21 @@
+@media (max-width: 1400px) {
+    .MainWrap {
+        width: 700px;
+        background-color: aqua;
+    }
+}
+
 .MainWrap {
     width: 1400px;
     height: 600px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardWrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

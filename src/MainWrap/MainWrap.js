@@ -1,15 +1,21 @@
+import ShuffleButton from '../ShuffleButton/ShuffleButton';
 import TeamCard from '../TeamCard/TeamCard';
 import './MainWrap.css'
 
 function MainWrap () {
     return(
         <div className='MainWrap'>
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
+            <div className="CardWrap">
+                <TeamCard />
+                <TeamCard />
+                <TeamCard />
+                <TeamCard />
+                <TeamCard />
+                <TeamCard />
+            </div>
+            <div className='ButtonWrap'>
+                <ShuffleButton />
+            </div>
         </div>
     )
 }

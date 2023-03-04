@@ -1,0 +1,22 @@
+.ShuffleButton {
+    width: 660px;
+    height: 50px;
+
+    margin-top: 100px;
+    text-align: center;
+    line-height: 50px;
+
+    background-color: #25539c;
+    color: #f2f2f2;
+    outline: none;
+
+    font-size: 25px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.ShuffleButton:hover {
+    outline: #25539c solid 1px;
+    background-color: #f2f2f2;
+    color: #25539c;
+}

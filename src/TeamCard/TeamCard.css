@@ -1,7 +1,7 @@
 .TeamCard {
     width: 200px;
-    height: 300px;
-    margin: 5px 15px;
+    height: 250px;
+    margin: 10px 15px;
 
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
     background-color: #f2f2f2;
     border-radius: 20px;
 
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 24px;
     
     transition: all 0.3s ease-out;
 }
@@ -19,24 +19,56 @@
     transform: translateY(-10px);
 }
 
+.LeaderSection {
+    width: 200px;
+    height: 100px;
+    background-color: #25539c;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.TeamNumber {
+    padding: 0px;
+    margin: 20px 0px 0px 20px;
+    color: #f2f2f2;
+    font-size: 13px;
+}
+
+.LeaderTextSection {
+    display: flex;
+    justify-content: center;
+}
+
+.Leader {
+    font-size: 12px;
+    color: #f2f2f2;
+    margin-right: 5px;
+    margin-top: 38px;
+}
+
 .TeamLeader {
-    width: 70px;
-
-    margin-top: 50px;
-    margin-bottom: 20px;
-
     text-align: center;
 
-    color: #1c1b1a;
-    font-size: 24px;
+    color: #f2f2f2;
+    font-size: 25px;
+    font-weight: 800;
+}
 
-    padding-bottom: 10px;
-    border-bottom: #25539c 3px solid;
+.MemberSection {
+    width: 160px;
+    height: 100px;
+
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .TeamMember {
-    width: 100px;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    color: #1c1b1a;
+    color: #1a1b1c ;
     margin: 0px;
+    font-size: 20px;
 }
