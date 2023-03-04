@@ -1,14 +1,14 @@
 import './TeamCard.css'
 
-function TeamCard() {
+function TeamCard(props) {
 
     return (
         <div className='TeamCard'>
             <div className='LeaderSection'>
-                <p className='TeamNumber'># team1</p>
+                <p className='TeamNumber'># team{props.teamNum}</p>
                 <div className='LeaderTextSection'>
                     <p className='Leader'>Leader</p>
-                    <p className='TeamLeader'>김태완</p>
+                    <p className='TeamLeader'>{props.teamLeader}</p>
                 </div>
             </div>
 
