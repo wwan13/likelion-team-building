@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/likelion-team-building/static/css/main.a086cd3e.css",
+    "main.js": "/likelion-team-building/static/js/main.f101fe33.js",
+    "static/js/787.03ac76bd.chunk.js": "/likelion-team-building/static/js/787.03ac76bd.chunk.js",
+    "index.html": "/likelion-team-building/index.html",
+    "main.a086cd3e.css.map": "/likelion-team-building/static/css/main.a086cd3e.css.map",
+    "main.f101fe33.js.map": "/likelion-team-building/static/js/main.f101fe33.js.map",
+    "787.03ac76bd.chunk.js.map": "/likelion-team-building/static/js/787.03ac76bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a086cd3e.css",
+    "static/js/main.f101fe33.js"
+  ]
+}
