@@ -1,7 +1,31 @@
+.TeamCardFront {
+    backface-visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+.TeamCardBack {
+    backface-visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #25539c;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 24px;
+    font-size: 25px;
+    color: #f2f2f2;
+}
+
 .TeamCard {
     width: 200px;
     height: 250px;
-    margin: 15px 15px;
+    margin: 0px 15px 15px 15px;
 
     display: flex;
     flex-direction: column;
@@ -12,12 +36,13 @@
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 24px;
     
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
+    transform-style: preserve-3d;
 }
 
-.TeamCard:hover {
+/* .TeamCard:hover {
     transform: translateY(-10px);
-}
+} */
 
 .LeaderSection {
     width: 200px;
@@ -56,11 +81,11 @@
 .MemberSection {
     width: 160px;
     height: 100px;
-
-    margin: auto;
+    margin: 25px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .TeamMember {
