@@ -13,10 +13,10 @@ function TeamCard(props) {
             </div>
 
             <div className='MemberSection'>
-                <p className='TeamMember'>이예빈</p>
-                <p className='TeamMember'>홍용준</p>
-                <p className='TeamMember'>윤현지</p>
-                <p className='TeamMember'>이재헌</p>
+                <p className='TeamMember'>{props.mem1}</p>
+                <p className='TeamMember'>{props.mem2}</p>
+                <p className='TeamMember'>{props.mem3}</p>
+                <p className='TeamMember'>{props.mem4}</p>
             </div>
         </div>
     )
